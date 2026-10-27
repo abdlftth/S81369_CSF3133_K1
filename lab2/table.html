@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile Page - Lab 2</title>
+</head>
+<body>
+
+    <!-- 1. Header Section -->
+    <header>
+        <h1>Welcome to My Personal Profile</h1>
+    </header>
+
+    <!-- 2. Navigation Links Section -->
+    <nav>
+        <a href="#profile-table">Profile Info</a> | 
+        <a href="#registration-form">Register / Feedback</a>
+    </nav>
+
+    <hr>
+
+    <!-- 3. Section Element for main body content -->
+    <section>
+
+        <!-- Article 1: Table displaying personal information -->
+        <article id="profile-table">
+            <h2>Personal Information</h2>
+            <p>Below is a table displaying personal profile details:</p>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Occupation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Putri Balqis</td>
+                        <td>22</td>
+                        <td>Student</td>
+                    </tr>
+                    <tr>
+                        <td>Fattah Amin</td>
+                        <td>25</td>
+                        <td>Network Maintenance</td>
+                    </tr>
+                    <tr>
+                        <td>Hafizuddin</td>
+                        <td>34</td>
+                        <td>Salesman</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+
+        <br><hr><br>
+
+        <!-- Article 2: Form collecting basic user information -->
+        <article id="registration-form">
+            <h2>User Registration Form</h2>
+            
+            <form action="submit_form.php" method="post">
+                <!-- Text Input for Name -->
+                <label for="fname">First Name:</label><br>
+                <input type="text" id="fname" name="firstname"><br><br>
+
+                <!-- Text Input for Email -->
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email"><br><br>
+
+                <!-- Radio Buttons for Gender -->
+                <label>Gender:</label><br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br><br>
+
+                <!-- Checkboxes for Favorite Hobbies -->
+                <label>Favorite Hobbies:</label><br>
+                <input type="checkbox" id="sport" name="hobby1" value="Sport">
+                <label for="sport">Sport</label><br>
+                <input type="checkbox" id="gaming" name="hobby2" value="Gaming">
+                <label for="gaming">Gaming</label><br>
+                <input type="checkbox" id="fishing" name="hobby3" value="Fishing">
+                <label for="fishing">Fishing</label><br><br>
+
+                <!-- Submit Button -->
+                <input type="submit" value="Submit">
+            </form>
+        </article>
+
+    </section>
+
+    <br><hr>
+
+    <!-- 4. Footer Section -->
+    <footer>
+        <p>&copy; 2024 My Web Page. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
