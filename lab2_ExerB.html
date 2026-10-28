@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Course Feedback</title>
+</head>
+<body>
+
+    <!--
+    === LIST OF FIXED ERRORS ===
+    1. Line 10: Found closing </head> inside <body>; corrected to </header>.
+    2. Line 19: Third <th> column was written as <td>Rating</td>; corrected to <th>Rating</th>.
+    3. Line 21: Duplicate opening <tr> tag; removed the extra <tr>.
+    4. Line 24-27: Incorrect row cell layout and wrong colspan usage (<td colspan="3"> on a 3-column table causing overflow); restructured cells properly for Week 1 & Week 2.
+    5. Line 32: Unclosed <td> tag in <td>Semantic HTML<td>; corrected to <td>Semantic HTML</td>.
+    6. Line 39-40: Mismatched <label for="name"> and <input id="fullname">; matched label attribute to for="fullname".
+    7. Line 42-46: Radio buttons had different name attributes (name="good" and name="poor"), allowing multiple selections; grouped them using name="rating". Also fixed orphan label for "Poor" and mislinked for attribute.
+    8. Line 47-48: Label for="labs" did not match checkbox id="lab"; changed label attribute to for="lab".
+    9. Line 49: Typo in closing tag </from>; corrected to </form>.
+    10. Line 52: Missing semicolon in HTML entity &copy; corrected to &copy;.
+    -->
+	
+	<header>
+		<h1>CSF3133 Course Feedback</h1>
+	</header>
+
+	<nav>
+		<a href="#results">Results</a>
+		<a href="#form">Feedback Form</a>
+	</nav>
+
+	<section id="results">
+		<h2>Feedback Summary</h2>
+		<table>
+			<thead>
+				<tr>
+					<th>Week</th>
+					<th>Topic</th>
+					<th>Rating</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>Introduction to HTML</td>
+					<td>4.5</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>colspan="3">Tables and Forms</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>Semantic HTML<td>4.0</td>
+				</tr>
+			</tbody>
+		</table>
+	</section>
+
+	<section id="form">
+		<h2>Give Your Feedback</h2>
+		<form action="submit_feedback.php" method="post">
+		
+			<p>
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name"><br>
+			</p>
+			
+			<p>
+				<label>Overall rating:</label><br>
+				<input type="radio" id="good" name="good" value="good">
+			</p>
+			
+			<p>
+				<label for="good">Good</label>
+				<input type="radio" id="poor" name="poor" value="poor">
+			</p>
+			
+			<p>
+				<label for="poor">Poor</label><br>
+				<input type="checkbox" id="lab" name="lab" value="yes">
+			</p>
+			
+			<p>
+				<label for="lab">I attended all labs</label>
+				<br>
+				<input type="submit" value="Submit">
+			</p>
+			
+		</form>
+	</section>
+
+	<footer>
+			<p>Copyright &copy;2026 CSF3133</p>
+	</footer>
+			
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Career Day 2026</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Faculty Career Day 2026</h1>
+        <p>Step Into Your Future!</p>
+    </header>
+
+    <!-- Navigation with Internal Links -->
+    <nav>
+            <a href="#about">About the Event</a>
+            <a href="#schedule">Event Schedule</a>
+            <a href="#register">Registration</a>
+    </nav>
+
+    <!-- Section 1: About the Event -->
+    <section id="about">
+        <h2>About the Event</h2>
+		<p>Focuses on exploration, curiosity, and learning. Professionals speak in classrooms, panels, or interactive booths, and students do not submit resumes or apply for jobs.</p>
+        
+        <!-- Article 1: Keynote Speaker -->
+        <article>
+            <h3>Keynote Speaker: Dr. Raof</h3>
+            <p>Dr. Raof, a global leader in artificial intelligence, will discuss the future trends in tech careers.</p>
+        </article>
+
+        <!-- Article 2: Resume Workshop -->
+        <article>
+            <h3>Workshop: Master Your Interview Skills</h3>
+            <p>Learn practical strategies for successful job interviews.</p>
+        </article>
+    </section>
+
+    <!-- Section 2: Event Schedule Table -->
+    <section id="schedule">
+        <h2>Event Schedule</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Activity</th>
+                    <th>Venue</th>
+                    <th>Person in Charge</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>08:30 AM - 09:30 AM</td>
+                    <td>Opening Ceremony &amp; Keynote Address</td>
+                    <td>Main Auditorium</td>
+                    <td>Prof. Radzuan</td>
+                </tr>
+                <tr>
+                    <td>09:30 AM - 11:00 AM</td>
+                    <td>Resume Building Workshop</td>
+                    <!-- rowspan: Same venue for two consecutive sessions -->
+                    <td rowspan="2">Lab Hall A</td>
+                    <td>Khabib</td>
+                </tr>
+                <tr>
+                    <td>11:00 AM - 12:30 PM</td>
+                    <td>Interview Sessions</td>
+                    <td>Khairul</td>
+                </tr>
+                <tr>
+                    <td>12:30 PM - 02:00 PM</td>
+                    <!-- colspan: Lunch break spanning Activity, Venue, and Person in Charge -->
+                    <td colspan="3">Lunch Break &amp; Networking Session</td>
+                </tr>
+                <tr>
+                    <td>02:00 PM - 03:30 PM</td>
+                    <td>Industry Panel Discussion</td>
+                    <td>Auditorium B</td>
+                    <td>Dr. Lin Dan</td>
+                </tr>
+                <tr>
+                    <td>03:30 PM - 05:00 PM</td>
+                    <td>Career Fair &amp; Company Booths</td>
+                    <td>Exhibition Hall</td>
+                    <td>Organising Committee</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Section 3: Registration Form -->
+    <section id="register">
+        <h2>Registration Form</h2>
+        <form action="register.html" method="post">
+            
+            <!-- Text Inputs -->
+            <p>
+                <label for="fullname">Full Name:</label><br>
+                <input type="text" id="fullname" name="fullname" required>
+            </p>
+            
+            <p>
+                <label for="matric">Matric Number:</label><br>
+                <input type="text" id="matric" name="matric" required>
+            </p>
+            
+            <p>
+                <label for="email">E-mail:</label><br>
+                <input type="email" id="email" name="email" required>
+            </p>
+
+            <!-- Radio Buttons -->
+                <label>Year of Study:</label><br>
+                <input type="radio" id="year1" name="year_of_study" value="1">
+                <label for="year1">Year 1</label><br>
+
+                <input type="radio" id="year2" name="year_of_study" value="2">
+                <label for="year2">Year 2</label><br>
+
+                <input type="radio" id="year3" name="year_of_study" value="3">
+                <label for="year3">Year 3</label><br>
+
+                <input type="radio" id="year4" name="year_of_study" value="4">
+                <label for="year4">Year 4</label><br><br>
+            
+
+            <!-- Checkboxes (At least 3 choices) -->
+                <label>Sessions You Wish to Join:</label><br>
+                <input type="checkbox" id="sess1" name="sessions[]" value="keynote">
+                <label for="sess1">Keynote Address</label><br>
+
+                <input type="checkbox" id="sess2" name="sessions[]" value="resume">
+                <label for="sess2">Resume Building Workshop</label><br>
+
+                <input type="checkbox" id="sess3" name="sessions[]" value="panel">
+                <label for="sess3">Industry Panel Discussion</label><br>
+
+                <input type="checkbox" id="sess4" name="sessions[]" value="fair">
+                <label for="sess4">Career Fair &amp; Booths</label><br><br>
+
+            <!-- Drop-down List (At least 4 options) -->
+            <p>
+                <label for="programme">Programme / Faculty:</label><br>
+                <select id="programme" name="programme">
+                    <option value="cs">Computer Science</option>
+                    <option value="se">Software Engineering</option>
+                    <option value="is">Information Systems</option>
+                    <option value="ai">Artificial Intelligence</option>
+                </select>
+            </p>
+
+            <!-- Submit Button -->
+            <p>
+                <button type="submit">Register Now</button>
+            </p>
+
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Organised by the Faculty Career Development Committee &copy; 2026. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
