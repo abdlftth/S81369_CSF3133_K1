@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!-- Viewport meta tag for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-Café Campus</title>
+    
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="cafe.css">
+    
+    <style>
+        /* Link states in LVHA order (link -> visited -> hover -> active) */
+        a:link { color: #1A5276; }
+        a:visited { color: #7D3C98; }
+        a:hover { color: #E67E22; }
+        a:active { color: #C0392B; }
+        
+        /* Heading and paragraph styles */
+        h1 { text-decoration: overline; }
+        p { color: #333333; text-align: justify; }
+        
+        /* Class selector for intro paragraph */
+        .intro {
+            font-size: 18px;
+            background-color: #FDEBD0;
+            padding: 10px;
+        }
+        
+        /* Class selector for highlighted prices */
+        .highlight {
+            font-weight: bold;
+            color: #C0392B;
+        }
+    </style>
+</head>
+<body>
+<!--
+    Error 1 (Baris 7): Sintaks komen HTML salah dalam <style>; ditukar kepada /* Navigation bar */.
+    Error 2 (Baris 9): Nilai CSS 'no' tidak sah; ditukar kepada 'none'.
+    Error 3 (Baris 14-15): Susunan pseudo-class pautan salah; disusun semula (link -> visited -> hover -> active).
+    Error 4 (Baris 17): Nilai 'overlined' tidak sah; ditukar kepada 'overline'.
+    Error 5 (Baris 18): Tiada tanda titik bertindih ':' selepas 'color'; ditambah menjadi 'color: #333333;'.
+    Error 6 (Baris 19 & 22): Guna '#intro' (ID) dan 'highlight' tanpa titik; dibetulkan kepada kelas '.intro' dan '.highlight'.
+    Error 7 (Baris 34): Tiada simbol '#' pada pautan; ditukar kepada 'href="#menu"'.
+    Error 8 (Baris 42 & 46): ID 'item' berulang pada tag <article>; ditukar kepada 'class="item"'.
+    Error 9 (Baris 53): Tiada atribut 'controls' pada tag <video>; ditambah 'controls'.
+    Error 10 (Baris 54): Jenis MIME 'mp4' tidak sah; ditukar kepada 'type="video/mp4"'.
+-->
+
+    <!-- Header Section -->
+    <header>
+        <h1>e-Café Campus</h1>
+    </header>
+
+    <!-- Navigation Bar Section -->
+    <nav>
+        <ul>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#feedback">Feedback</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Menu Section with Promotions -->
+    <section id="menu">
+        <h2>Today's Menu</h2>
+        <p class="intro">Freshly brewed coffee and local delights every day.</p>
+        
+        <article class="item">
+            <h3>Kopi Tarik</h3>
+            <p>Only <span class="old-price">RM 4.50</span> <span class="highlight">RM 3.50</span></p>
+        </article>
+        
+        <article class="item">
+            <h3>Nasi Lemak</h3>
+            <p>Only <span class="old-price">RM 6.50</span> <span class="highlight">RM 5.00</span></p>
+        </article>
+    </section>
+
+    <!-- Promotional Video Section -->
+    <section id="video">
+        <h2>Watch Our Story</h2>
+        <figure>
+            <video width="400" height="300" controls>
+                <source src="cafe.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <figcaption>A glimpse into daily life and fresh brews at e-Café Campus.</figcaption>
+        </figure>
+    </section>
+
+    <!-- Customer Feedback Form Section -->
+    <section id="feedback">
+        <h2>Share Your Feedback</h2>
+        <form class="feedback-form" action="#" method="post">
+            <p>
+                <label for="name"><strong>Name:</strong></label><br>
+                <input type="text" id="name" name="name" required>
+            </p>
+            <p>
+                <label for="email"><strong>E-mail:</strong></label><br>
+                <input type="email" id="email" name="email" required>
+            </p>
+
+            <p>
+                <strong>Visit Type:</strong><br>
+                <input type="radio" id="dinein" name="visit_type" value="Dine-in" checked>
+                <label for="dinein">Dine-in</label><br>
+                
+                <input type="radio" id="takeaway" name="visit_type" value="Take-away">
+                <label for="takeaway">Take-away</label>
+            </p>
+
+            <p>
+                <strong>Favourite Items:</strong><br>
+                <input type="checkbox" id="fav_kopi" name="fav_items" value="Kopi Tarik">
+                <label for="fav_kopi">Kopi Tarik</label><br>
+                
+                <input type="checkbox" id="fav_nasi" name="fav_items" value="Nasi Lemak">
+                <label for="fav_nasi">Nasi Lemak</label><br>
+                
+                <input type="checkbox" id="fav_roti" name="fav_items" value="Roti Bakar">
+                <label for="fav_roti">Roti Bakar</label>
+            </p>
+
+            <!-- Submit Button -->
+            <p>
+                <input type="submit" value="Submit Feedback" class="submit-btn">
+            </p>
+        </form>
+    </section>
+
+    <!-- Footer Section with Contact Address -->
+    <footer id="contact">
+        <p>&copy; 2026 e-Café Campus</p>
+        <address>
+            Contact us via email: <a href="mailto:ecafe@campus.edu.my">ecafe@campus.edu.my</a>
+        </address>
+    </footer>
+
+</body>
+</html>

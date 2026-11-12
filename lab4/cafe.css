@@ -1,0 +1,127 @@
+/* General Page Layout */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    color: #333333;
+}
+
+header {
+    background-color: #6F4E37;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+section {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+}
+
+/* Navigation Bar Styles */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #4A3525;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    background-color: #4A3525;
+    color: #ffffff;
+    padding: 12px 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background-color: #D2691E;
+    color: #ffffff;
+}
+
+/* Menu Item & Promotion Styles */
+.item {
+    border-bottom: 1px solid #eeeeee;
+    padding: 10px 0;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #7f8c8d;
+    margin-right: 8px;
+}
+
+/* Responsive Video & Figure Styles */
+figure {
+    margin: 0;
+    text-align: center;
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #6F4E37;
+}
+
+figcaption {
+    font-style: italic;
+    color: #555555;
+    margin-top: 8px;
+}
+
+/* Feedback Form Styles */
+.feedback-form {
+    background-color: #FDF2E9;
+    padding: 20px;
+    border: 1px solid #E67E22;
+    border-radius: 5px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.feedback-form input[type="text"],
+.feedback-form input[type="email"] {
+    width: 95%;
+    padding: 8px;
+    margin-top: 4px;
+    border: 1px solid #cccccc;
+}
+
+.submit-btn {
+    background-color: #6F4E37;
+    color: #ffffff;
+    padding: 10px 18px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.submit-btn:hover {
+    background-color: #4A3525;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #4A3525;
+    color: #ffffff;
+    padding: 15px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+footer p {
+    color: #ffffff;
+    text-align: center;
+}
