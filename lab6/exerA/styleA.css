@@ -1,0 +1,198 @@
+/* Page background and typography */
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f3f4f6;
+    margin: 0;
+    padding: 20px;
+    color: #222;
+}
+
+.page-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Dark teal header banner */
+header {
+    background-color: #1f4e6d;
+    color: #ffffff;
+    padding: 22px 26px;
+    border-radius: 8px;
+    margin-bottom: 14px;
+}
+
+header h1 {
+    margin: 0 0 8px 0;
+    font-size: 1.75rem;
+}
+
+header p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #e2e8f0;
+}
+
+/* Individual white rounded cards */
+.card {
+    background-color: #ffffff;
+    border: 1px solid #dcdfe4;
+    border-radius: 8px;
+    padding: 18px 22px;
+    margin-bottom: 14px;
+}
+
+/* Player name input row */
+.player-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.player-row label {
+    font-size: 0.95rem;
+}
+
+input[type="text"] {
+    padding: 7px 10px;
+    border: 1px solid #b8bec8;
+    border-radius: 4px;
+    width: 210px;
+    font-size: 0.95rem;
+}
+
+/* Blue buttons with hover effect */
+button {
+    padding: 8px 16px;
+    background-color: #3682c4;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #26649c;
+}
+
+.choice-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+/* Battle arena and 120px fixed images */
+.battle-arena {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;
+    margin: 14px 0 6px 0;
+    text-align: center;
+}
+
+.fighter-label {
+    font-weight: bold;
+    margin: 0 0 8px 0;
+    font-size: 1rem;
+}
+
+.player-box img {
+    width: 120px;
+    height: 120px;
+    display: block;
+    border-radius: 16px;
+}
+
+.vs-text {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #6b7280;
+    margin-top: 24px;
+}
+
+/* Result text and scoreboard */
+#result {
+    font-weight: bold;
+    font-size: 1.05rem;
+    margin: 0 0 10px 0;
+}
+
+#result:empty {
+    display: none;
+}
+
+.scoreboard {
+    display: flex;
+    gap: 16px;
+    font-size: 0.98rem;
+}
+
+/* History section and table styling */
+.card h2 {
+    margin: 0 0 12px 0;
+    font-size: 1.25rem;
+}
+
+#history {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 14px;
+}
+
+#history th,
+#history td {
+    border: 1px solid #d1d5db;
+    padding: 8px 12px;
+    text-align: center;
+    font-size: 0.92rem;
+}
+
+#history th {
+    background-color: #1f4e6d;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#history td:nth-child(2),
+#history td:nth-child(3) {
+    text-transform: capitalize;
+}
+
+.bottom-controls {
+    display: flex;
+    gap: 10px;
+}
+
+#welcomeMsg {
+    font-weight: bold;
+    color: #1f4e6d;
+    margin-left: 8px;
+}
+
+#summary {
+    margin: 12px 0 0 0;
+    font-weight: bold;
+    color: #1f4e6d;
+}
+
+#summary:empty {
+    display: none;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    color: #6b7280;
+    font-size: 0.88rem;
+    padding: 12px 0;
+}
+
+footer p {
+    margin: 4px 0;
+}
